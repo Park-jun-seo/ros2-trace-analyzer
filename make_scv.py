@@ -20,7 +20,7 @@ import csv
 import subprocess
 
 # 수정: trace 파일들이 있는 최상위 폴더 경로 (실제 환경에 맞게 수정)
-TRACE_DIR = "/home/pjs/ros_trace/ust/uid/1000/64-bit"
+TRACE_DIR = os.path.expanduser("~/ros_trace/ust/uid/1000/64-bit")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)

@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-# CSV 로드 (이미 df에 로드되어 있다면 이 셀은 건너뛰셔도 됩니다)
 csv_file = "data/output.csv"
 df = pd.read_csv(csv_file, encoding='utf-8')
 
@@ -81,7 +80,6 @@ df_freq['frequency_hz'] = 1.0 / df_freq['interval_sec']
 # topic_name 컬럼 추가
 df_freq['topic_name'] = df_freq['publisher_handle'].map(mapping)
 
-# 3) Interactive line chart with Plotly
 fig = px.line(
     df_freq,
     x='Time',
@@ -101,6 +99,8 @@ fig.update_layout(
     margin=dict(l=40, r=40, t=60, b=40)
 )
 
-fig.show()
+# ← 추가: 모든 trace를 legend-only 모드로 설정
+fig.update_traces(visible='legendonly')
+
 
 # %%
