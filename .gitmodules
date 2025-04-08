@@ -1,0 +1,4 @@
+[submodule "external/ros2_tracing"]
+	path = external/ros2_tracing
+	url = https://github.com/ros2/ros2_tracing.git
+	branch = humble
