@@ -42,9 +42,9 @@ ros2 trace -s ros_trace -p ~/ -l
 #### trace 시작하는법
 ```bash
 #vscode 에서 Jupyter extension 사용
-#trace data 를 scv로 만들어줌
+#trace data 를 csv 파일로 만들어줌
 make_scv.py
-#대화형 시각화 코드
+#대화형 시각화 코드 csv 파일이 만들어져 있어야함
 histogram.py
 ``` 
 

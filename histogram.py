@@ -1,5 +1,8 @@
 #%%
 %pip install "numpy<2"
+%pip install pandas
+%pip install plotly
+%pip install --upgrade nbformat
 #%%
 import pandas as pd
 import numpy as np
