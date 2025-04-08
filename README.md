@@ -38,4 +38,14 @@ Tracing enabled
 ros2 trace -s ros_trace -p ~/ -l 
 ``` 
 
+
+#### trace 시작하는법
+```bash
+#trace data 를 scv로 만들어줌
+make_scv.py
+#대화형 시각화 코드
+histogram.py
+``` 
+
+
 ![newplot](https://github.com/user-attachments/assets/46fb722d-ba68-482d-9c2c-abd216317085)
