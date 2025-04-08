@@ -37,4 +37,5 @@ Tracing enabled
 # 명령 입력후 enter 종료 하려면 enter 한번더
 ros2 trace -s ros_trace -p ~/ -l 
 ``` 
-![newplot](https://github.com/user-attachments/assets/0443b464-60cc-4185-bd4b-95d37f7c2371)
+
+![newplot](https://github.com/user-attachments/assets/46fb722d-ba68-482d-9c2c-abd216317085)
